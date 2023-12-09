@@ -2,10 +2,11 @@ FROM linuxserver/smokeping
 
 RUN apk add git
 
-RUN git clone git@github.com:sharefm/home-smokeping-config.git
+WORKDIR /opt/
 
-WORKDIR /opt/home-smokeping-config
-COPY * /config
+RUN git clone https://github.com/sharefm/home-smokeping-config.git
+
+RUN cp /opt/home-smokeping-config/* /config
 
 #WORKDIR /config
 #COPY Targets .
