@@ -1,5 +1,7 @@
 FROM linuxserver/smokeping
 
+RUN apk add git
+
 RUN git clone git@github.com:sharefm/home-smokeping-config.git
 
 WORKDIR /opt/home-smokeping-config
