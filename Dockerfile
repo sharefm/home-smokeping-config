@@ -1,10 +1,15 @@
 FROM linuxserver/smokeping
 
-WORKDIR /config
-COPY Targets .
-COPY Probes .
-COPY General .
-COPY Database .
+RUN git clone git@github.com:sharefm/home-smokeping-config.git
+
+WORKDIR /opt/home-smokeping-config
+COPY * /config
+
+#WORKDIR /config
+#COPY Targets .
+#COPY Probes .
+#COPY General .
+#COPY Database .
 
 VOLUME /config /data
 
