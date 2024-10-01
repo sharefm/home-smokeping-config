@@ -79,10 +79,6 @@ menu = CernIXP
 title = Cern Internet eXchange Point
 host = cixp.web.cern.ch
 
-+++ SBB
-menu = SBB
-title = SBB
-host = www.sbb.ch
 
 ++ UK
 
@@ -94,10 +90,6 @@ menu = Cambridge
 title = Cambridge
 host = cam.ac.uk
 
-+++ UEA
-menu = UEA
-title = UEA
-host = www.uea.ac.uk
 
 + USA
 
@@ -109,13 +101,8 @@ menu = MIT
 title = Massachusetts Institute of Technology Webserver
 host = web.mit.edu
 
-++ OSUOSL
-menu = Oregon State University Open Source Lab
-title = Oregon State University Open Source Lab
-host = osuosl.org
 
-
-probe = DNS
+probe = DNSdig
 
 + DNS
 menu = DNS
@@ -125,11 +112,6 @@ title = DNS
 menu = Paltel Caching DNS 1
 title = Paltel DNS 212.14.226.73
 host  = 212.14.226.73
-
-++ PaltelCachingDNS2
-menu = Paltel caching DNS 2
-title = Paltel DNS 212.14.236.105
-host  = 212.14.236.105
 
 ++ PaltelDNS1
 menu = Paltel authoritative DNS 1

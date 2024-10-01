@@ -4,7 +4,9 @@ networks:
     external: false
 
 volumes:
-  smokeping-volume:
+  smokeping-config-vol:
+    driver: local
+  smokeping-data-vol:
     driver: local
 
 services:
@@ -22,8 +24,8 @@ services:
       #- SHARED_SECRET=password #optional
       #- CACHE_DIR=/tmp #optional
     volumes:
-      - sokeping-config-vol:/config
-      - sokeping-data-vol:/data
+      - smokeping-config-vol:/config
+      - smokeping-data-vol:/data
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
