@@ -7,7 +7,7 @@ binary = /usr/sbin/fping
 binary = /usr/sbin/fping
 protocol = 6
 
-+ DNSdig
++ DNS
 binary = /usr/bin/dig
 forks = 5
 offset = 50%

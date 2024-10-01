@@ -102,9 +102,10 @@ title = Massachusetts Institute of Technology Webserver
 host = web.mit.edu
 
 
-probe = DNSdig
+
 
 + DNS
+probe = DNS
 menu = DNS
 title = DNS
 
