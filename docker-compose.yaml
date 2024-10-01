@@ -9,7 +9,7 @@ volumes:
 
 services:
   smokeping-server:
-    image: sharefm/home-smokeping #lscr.io/linuxserver/smokeping:latest
+    image: sharefm/home-smokeping:latest #lscr.io/linuxserver/smokeping:latest
     container_name: smokepinger
     restart: always
     networks:
@@ -22,8 +22,8 @@ services:
       #- SHARED_SECRET=password #optional
       #- CACHE_DIR=/tmp #optional
     volumes:
-      - /config
-      - /data
+      - sokeping-config-vol:/config
+      - sokeping-data-vol:/data
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
