@@ -9,13 +9,12 @@ protocol = 6
 
 + DNS
 binary = /usr/bin/dig
-forks = 5
+forks = 15
 offset = 50%
-lookup = google.com
 pings = 5
 step = 30
-timeout = 15
-lookup = www.example.org
+timeout = 5
+lookup = www.plug.ps
 pings = 5
 server = ns1.paltel.net
 

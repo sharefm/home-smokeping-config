@@ -103,31 +103,31 @@ host = web.mit.edu
 
 
 
-probe = DNS
-+ DNS
 
++ DNS
 menu = DNS
 title = DNS
+probe = DNS
 
 ++ PaltelCachingDNS1
 menu = Paltel Caching DNS 1
 title = Paltel DNS 212.14.226.73
-host  = 212.14.226.73
+server  = 212.14.226.73
 
 ++ PaltelDNS1
 menu = Paltel authoritative DNS 1
 title = Paltel authoritative DNS 216.239.32.106
-host  = 216.239.32.106
+server  = 216.239.32.106
 
 ++ ooredooDNS1
 menu = Ooredoo authoritative DNS 1
 title = Ooredoo authoritative DNS 95.130.88.100
-host  = 95.130.88.100
+server  = 95.130.88.100
 
 ++ MadaDNS1
 menu = Mada authoritative DNS 1
 title = Mada authoritative DNS 145.239.1.138
-host  = 145.239.1.138
+server  = 145.239.1.138
 
 ++ GoogleDNS1
 menu = Google DNS 1
