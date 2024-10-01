@@ -9,7 +9,7 @@ protocol = 6
 
 + DNS
 binary = /usr/bin/dig
-lookup = harri.com
+lookup = google.com
 pings = 5
 step = 30
 

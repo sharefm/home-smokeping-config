@@ -23,7 +23,7 @@ host = 192.168.1.10
 ++ DadWifi
 menu = Dad's Wifi
 title = Dad's Wifi
-host = 192.168.1.11
+host = 192.168.1.192
 
 ++ SweetHome
 menu = Sweet Home Wifi
@@ -115,7 +115,7 @@ title = Oregon State University Open Source Lab
 host = osuosl.org
 
 
-probe = dns
+probe = DNS
 
 + DNS
 menu = DNS
