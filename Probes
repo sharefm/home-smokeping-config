@@ -9,9 +9,17 @@ protocol = 6
 
 + DNS
 binary = /usr/bin/dig
+forks = 5
+offset = 50%
 lookup = google.com
 pings = 5
 step = 30
+timeout = 15
+lookup = www.example.org
+pings = 5
+server = ns1.paltel.net
+
+
 
 + TCPPing
 binary = /usr/bin/tcpping
