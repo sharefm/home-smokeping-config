@@ -15,7 +15,6 @@ pings = 5
 step = 30
 timeout = 5
 lookup = www.plug.ps
-pings = 5
 server = ns1.paltel.net
 
 
