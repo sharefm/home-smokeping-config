@@ -103,9 +103,9 @@ host = web.mit.edu
 
 
 
-
-+ DNS
 probe = DNS
++ DNS
+
 menu = DNS
 title = DNS
 
