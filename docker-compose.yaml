@@ -1,13 +1,12 @@
 
 networks:
   smokeping-network:
-    driver: bridge
-
-volumes:
-  smokeping-config-vol:
-    driver: local
-  smokeping-data-vol:
-    driver: local
+    driver: host
+    external: true
+    
+volumes:  
+  config-vol:
+  data-vol:
 
 services:
   smokeping-server:
@@ -24,10 +23,10 @@ services:
       #- SHARED_SECRET=password #optional
       #- CACHE_DIR=/tmp #optional
     volumes:
-      - smokeping-config-vol:/config
-      - smokeping-data-vol:/data
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
+      - config-vol:/config
+      - data-vol:/data
+      # - /etc/timezone:/etc/timezone:ro
+      # - /etc/localtime:/etc/localtime:ro
     ports:
       - "8008:80"
       
