@@ -1,7 +1,7 @@
 
 networks:
   smokeping-network:
-    external: false
+    driver: bridge
 
 volumes:
   smokeping-config-vol:
