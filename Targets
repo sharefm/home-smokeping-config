@@ -103,11 +103,11 @@ host = web.mit.edu
 
 
 
-
+probe = DNS
 + DNS
 menu = DNS
 title = DNS
-probe = DNS
+
 
 ++ PaltelCachingDNS1
 menu = Paltel Caching DNS 1
