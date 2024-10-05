@@ -1,8 +1,17 @@
 
+# networks:
+#   smokeping-network:      
+#       driver: bridge
+#       external: false
+
+#version: "3.9"
 networks:
-  smokeping-network:
-    driver: host
+  smoke_net:
     external: true
+#     driver: macvlan
+    # driver_opts:
+    #   parent: /dev/enp0s31f6.10 # Replace with your actual interface name 
+
     
 volumes:  
   config-vol:
@@ -10,11 +19,15 @@ volumes:
 
 services:
   smokeping-server:
-    image: sharefm/home-smokeping:latest #lscr.io/linuxserver/smokeping:latest
+    image: sharefm/home-smokeping:latest #lscr.io/linuxserver/smokeping:latest  
+    network_mode: host 
     container_name: smokepinger
     restart: always
-    networks:
-      - smokeping-network
+    privileged: true
+    cap_add:
+      - NET_RAW
+    # networks: 
+    #   - smoke_net
     environment:
       - PUID=1000
       - PGID=1000
